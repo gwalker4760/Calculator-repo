@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+.container {
+  margin: 10vh auto 0 auto;
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: #727272;
+  max-width: 500px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  border-radius: 7px;
+  background-color: #727272;
+  color: white;
+  font-family: Patrick Hand;
+  grid-area: calulator;
+}
+.header h1 {
+  margin-bottom: 0px;
+  padding: 5px;
+}
+
+#display {
+  text-align: right;
+  height: 35px;
+  line-height: 35px;
+  padding: 16px 8px;
+  font-size: 25px;
+  border: 2px solid black;
+  margin: 5px;
+  background-color: white;
+  color: black;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas: "_clear _clear _DEL _divide" "one two three _multiply" "four five six _subtract" "seven eight nine _plus" "_zero _zero _decimal _equal";
+}
+
+.button {
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 7px;
+  color: white;
+  opacity: 70%;
+}
+.button h1 {
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 100%;
+}
+
+.clear {
+  grid-area: _clear;
+  color: black;
+  background-color: #c9c9c9;
+}
+
+.clear:active {
+  color: black;
+  background-color: white;
+}
+
+.delete {
+  grid-area: _DEL;
+  color: black;
+  background-color: #c9c9c9;
+}
+
+.delete:active {
+  color: black;
+  background-color: white;
+}
+
+.divide {
+  grid-area: _divide;
+  background-color: #d68b00;
+}
+
+.divide:active {
+  color: #d68b00;
+  background-color: white;
+}
+
+.one {
+  grid-area: one;
+}
+
+.one:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.two {
+  grid-area: two;
+}
+
+.two:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.three {
+  grid-area: three;
+}
+
+.three:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.multiply {
+  grid-area: _multiply;
+  background-color: #d68b00;
+}
+
+.multiply:active {
+  color: #d68b00;
+  background-color: white;
+}
+
+.four {
+  grid-area: four;
+}
+
+.four:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.five {
+  grid-area: five;
+}
+
+.five:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.six {
+  grid-area: six;
+}
+
+.six:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.subtract {
+  grid-area: _subtract;
+  background-color: #d68b00;
+}
+
+.subtract:active {
+  color: #d68b00;
+  background-color: white;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.seven:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.eight:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.nine:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.plus {
+  grid-area: _plus;
+  background-color: #d68b00;
+}
+
+.plus:active {
+  color: #d68b00;
+  background-color: white;
+}
+
+.zero {
+  grid-area: _zero;
+}
+
+.zero:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.decimal {
+  grid-area: _decimal;
+}
+
+.decimal:active {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.equal {
+  grid-area: _equal;
+  background-color: #d68b00;
+}
+
+.equal:active {
+  color: #d68b00;
+  background-color: white;
+}

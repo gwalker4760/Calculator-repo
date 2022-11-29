@@ -1,0 +1,234 @@
+$primarycolor: black;
+$secondarycolor: white;
+$tertiarycolor: rgb(114, 114, 114);
+$fourthcolor: rgb(214, 139, 0);
+$fifthcolor: rgb(201, 201, 201);
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+.container {
+    margin: 10vh auto 0 auto;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: $tertiarycolor;
+    max-width: 500px;
+}
+
+//calculator header
+.header {
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: $tertiarycolor;
+    color: $secondarycolor;
+    font-family: Patrick Hand;
+    grid-area: calulator;
+    h1 {
+        margin-bottom: 0px;
+        padding: 5px;
+    }
+}
+
+#display {
+    text-align: right;
+    height: 35px;
+    line-height: 35px;
+    padding: 16px 8px;
+    font-size: 25px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: $secondarycolor;
+    color: $primarycolor;
+}
+
+//grid layout
+.buttons {
+    display: grid;
+    grid-template-areas:  
+    "_clear _clear _DEL _divide" 
+    "one two three _multiply"
+    "four five six _subtract"
+    "seven eight nine _plus"
+    "_zero _zero _decimal _equal";
+}
+
+//button modification
+.button {
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 7px;
+    color: $secondarycolor;
+    opacity: 70%;
+    h1 {
+        text-align: center;
+    }
+}
+.button:hover {
+    opacity: 100%;
+}
+
+//specific button coloring and grid placments
+.clear {
+    grid-area: _clear;
+    color: $primarycolor;
+    background-color: $fifthcolor;
+}
+.clear:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+}
+
+.delete {
+    grid-area: _DEL;
+    color: $primarycolor;
+    background-color: $fifthcolor;
+}
+.delete:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+}
+
+.divide {
+    grid-area: _divide;
+    background-color: $fourthcolor;
+}
+.divide:active {
+    color: $fourthcolor;
+    background-color: $secondarycolor;
+}
+
+.one {
+    grid-area: one;
+}
+.one:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.two {
+    grid-area: two;
+}
+.two:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.three {
+    grid-area: three;
+}
+.three:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.multiply {
+    grid-area: _multiply;
+    background-color: $fourthcolor;
+}
+.multiply:active {
+    color: $fourthcolor;
+    background-color: $secondarycolor;
+}
+
+.four {
+    grid-area: four;
+}
+.four:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.five {
+    grid-area: five;
+}
+.five:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.six {
+    grid-area: six;
+}
+.six:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.subtract {
+    grid-area: _subtract;
+    background-color: $fourthcolor; 
+}
+.subtract:active {
+    color: $fourthcolor;
+    background-color: $secondarycolor;
+}
+
+.seven {
+    grid-area: seven;
+}
+.seven:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.eight {
+    grid-area: eight;
+}
+.eight:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.nine {
+    grid-area: nine;
+}
+.nine:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.plus {
+    grid-area: _plus;
+    background-color: $fourthcolor;
+}
+.plus:active {
+    color: $fourthcolor;
+    background-color: $secondarycolor;
+}
+
+.zero {
+    grid-area: _zero;
+}
+.zero:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.decimal {
+    grid-area: _decimal;
+}
+.decimal:active {
+    color: $primarycolor;
+    background-color: $secondarycolor;
+    opacity: 50%;
+}
+
+.equal {
+    grid-area: _equal;
+    background-color: $fourthcolor;
+}
+.equal:active {
+    color: $fourthcolor;
+    background-color: $secondarycolor;
+}
